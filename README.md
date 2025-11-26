@@ -27,10 +27,10 @@ Returns country information using RestCountries API.
 ```
 
 ### GET /country?country-name={country-name}
-Returns country information using RestCountries API. 
-A caching mechanism is implemented for the flows using MongoDB.
-TTL index: 10 minutes.
-If a request is repeated within TTL, the response is returned from cache instead of RestCountries API.
+-Returns country information using RestCountries API. 
+-A caching mechanism is implemented for the flows using MongoDB.
+-TTL index: 10 minutes.
+-If a request is repeated within TTL, the response is returned from cache instead of RestCountries API.
 
 ### POST /kafka (Kafka Integration)
 Produces a country object to a Kafka topic.
@@ -63,16 +63,16 @@ Sample Response
 ]
 ```
 ### Additional Features
-*Unit tests with JUnit & Mockito
-*Docker image creation and container deployment
-*Fully asynchronous communication with external APIs and Kafka
+-Unit tests with JUnit & Mockito
+-Docker image creation and container deployment
+-Fully asynchronous communication with external APIs and Kafka
 
 ### Project Summary
 A reactive, fully asynchronous microservice integrating external APIs, caching, distributed streaming, and non-blocking communication.
 Designed for demonstrating modern Java microservice practices.
 
 ### Architecture
-*Microservice → Exposes REST endpoints
-*MongoDB → Caching & storage of Kafka messages
-*Kafka → Distributed streaming between producer and consumer
-*External API → RestCountries API for country info
+-Microservice → Exposes REST endpoints
+-MongoDB → Caching & storage of Kafka messages
+-Kafka → Distributed streaming between producer and consumer
+-External API → RestCountries API for country info
